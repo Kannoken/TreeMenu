@@ -1,0 +1,14 @@
+<li>
+    {{ key }}
+    {% if value != "{}" %}
+        <ul>
+            {% for k, v in value.items %}
+                {% with key=k value=v template_name="tree_view.html" %}
+                    {% include template_name %}
+                {% endwith %}
+            {% endfor %}
+        </ul>
+
+    {% endif %}
+
+</li>
