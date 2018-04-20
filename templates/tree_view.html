@@ -1,14 +1,16 @@
 <li>
-    {{ key }}
-    {% if value != "{}" %}
-        <ul>
+{#    <a href="#{{ key }}" >{{ key }}</a>#}
+{#    {{ key }}#}
+            <a href="#{{ key }}" class="tree-toggler">{{ key }}</a>
+
+    {% if value != '()' %}
+        <ul  class="tree">
             {% for k, v in value.items %}
                 {% with key=k value=v template_name="tree_view.html" %}
                     {% include template_name %}
                 {% endwith %}
             {% endfor %}
         </ul>
-
     {% endif %}
 
 </li>

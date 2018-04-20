@@ -1,0 +1,14 @@
+
+/*ul {*/
+    /*display: none;*/
+  /*!*white-space: nowrap; // stop the wrapping in the first place*!*/
+/*}*/
+/*!*#my_menu > li:first-child{*!*/
+    /*!*display: block;*!*/
+/*!*}*!*/
+/*#my_menu > ul:first-child{*/
+    /*display: block;*/
+/*}*/
+ul.tree{
+    display: none;
+}
